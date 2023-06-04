@@ -1,0 +1,130 @@
+@font-face {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url("fonts/Inter-Regular.woff2?v=3.18") format("woff2");
+}
+
+@font-face {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src: url("fonts/Inter-Bold.woff2?v=3.18") format("woff2");
+}
+
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+body {
+	margin: 0;
+	color: #fff;
+	background: #151C8F;
+	font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	font-variant-numeric: tabular-nums;
+}
+
+img {
+	border: 0;
+}
+
+.container {
+	margin: 0 auto;
+	padding: 0 1em;
+	max-width: 50em;
+}
+
+header {
+	margin: 2em 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+header .title-contain {
+	padding-left: 13px;
+}
+
+header .links {
+	padding-right: 13px;
+}
+
+
+.title {
+	display: inline;
+	color: #fff;
+	line-height: 1;
+	font-size: 1.5em;
+	font-weight: 700;
+	margin-right: 0.5em;
+}
+
+.services-title {
+	font-weight: 700;
+	font-size: 1.3em;
+	margin: 0;
+	padding: 8px 12px;
+	display: flex;
+	justify-content: space-between;
+}
+
+a {
+	color: #00FF8D;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+
+.steamdb-brand svg {
+	display: inline-block;
+	vertical-align: text-top;
+	fill: currentColor;
+}
+
+.services,
+#psa,
+noscript {
+	position: relative;
+	border: 1px solid #fff;
+	border-radius: 8px;
+	font-size: 1em;
+	line-height: 1.3;
+}
+
+.services + .services {
+	margin-top: 20px;
+}
+
+.services-container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	column-gap: 20px;
+	margin-bottom: 30px;
+}
+
+.service {
+	margin: 0 12px;
+	padding: 8px 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.service .status {
+	text-align: right;
+}
+
+.services .sep {
+	border-bottom: 1px solid #fff;
+}
+
